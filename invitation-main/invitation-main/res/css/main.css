@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  background-color: #F7F8F8;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+img {
+  display: block;
+}
+
+section {
+  position: relative;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.conts-wrap {
+  position: relative;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+section img,
+.conts-wrap img {
+  width: 100%;
+}
+
+.area03 .conts-wrap {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.area03 .conts-wrap:nth-of-type(2) {
+  margin-top: 40px;
+}
+
+.area03 .area-btn {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.area03 .area-btn a {
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 40px;
+  background-size: auto 24px !important;
+  font-size: 0;
+}
+
+.area03 .area-btn a.tel {
+  background: url('../img/call-img.png') no-repeat center;
+}
+
+.area03 .area-btn a.sms {
+  background: url('../img/sms-img.png') no-repeat center right;
+}
+
+.area03 .area-btn a.sms::before {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 1px;
+  height: 24px;
+  background: #ddd;
+}
+
+.root_daum_roughmap {
+  width: 100% !important;
+}
+
+:root {
+  --swiper-navigation-size: 20px;
+}
+
+:root {
+  --swiper-theme-color: #666;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+}
+
+.swiper-button-next:after,.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none!important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1
+}
+
+/* * {
+  margin:0;
+  padding:0;
+  outline: none;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #F7F8F8;
+  margin: 0 auto;
+  background-image: url(../img/bg_img_01.png);
+  background-size: 149px ;
+  background-repeat: no-repeat;
+  background-position: 50% 1530px;
+  background-attachment: local;
+}
+
+section {
+  padding: 0 15px;
+}
+
+section,
+header {
+  
+}
+
+.header-01 {
+  padding: 50px 0;
+}
+
+.header-01 > img {
+  display: block;
+  width: 40%;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.header-02 > img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.main-01 {
+  padding: 40px 0;
+}
+
+.main-01 > img {
+  display: block;
+  width: 40%;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.main-02 {
+  padding: 50px 0;
+}
+
+.main-02 > img {
+  display: block;
+  width: 3%;
+  max-width: 12px;
+  margin: 0 auto;
+}
+
+.main-03 {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.main-03 > .groom-01 > img {
+  display: block;
+  width:80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.groom-01  {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.call1 > a {
+  position: absolute;
+  top: 76%;
+  left: 60%;
+  width: 10%;
+  height: 20%;
+}
+
+.sms1 > a {
+  position: absolute;
+  top: 76%;
+  left: 80%;
+  width: 10%;
+  height: 20%;
+}
+
+.bride-01 {
+  position: relative;
+}
+
+.call2 > a {
+  position: absolute;
+  top: 76%;
+  left: 10%;
+  width: 10%;
+  height: 20%;
+}
+
+.sms2 > a {
+  position: absolute;
+  top: 76%;
+  left: 30%;
+  width: 10%;
+  height: 20%;
+}
+
+.main-03 > .bride-01 > img {
+  display: block;
+  width:80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+.main-05 {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.main-05 > img {
+  display: block;
+  width: 20%;
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+.main-06 :nth-child(1) {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.main-06 :nth-child(2) {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  margin: 40px auto;
+  padding-bottom: 100px;
+}
+
+.main-07 > img {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  margin: 40px auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+}
+
+.swiper-button-next:after,.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none!important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1
+}
+
+:root {
+  --swiper-navigation-size: 20px;
+}
+
+:root {
+  --swiper-theme-color: #666;
+}
+
+
+.main-08 {
+  padding-top: 80px;
+}
+
+.main-08 > img{
+  display: block;
+  width: 100%;
+  max-width: 90px;
+  margin: 0 auto;
+}
+
+
+#daumRoughmapContainer1680803723111 {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding: 40px 0;
+}
+
+
+.main-09 > img{
+  display: block;
+  width: 85%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.main-10 {
+  padding: 100px 0;
+}
+
+.main-10 > img{
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+
+.main-11 > img{
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 80px 0;
+} */

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:image" content="https://hwanuk-wedding.github.io/invitation/res/img/opengrap.jpg" />
+  <meta property="og:site_name" content="곽환욱♥강다슬 결혼합니다." />
+  <meta property="og:description"  content="2023/04/29 오월의 신부 웨딩홀 3층" />
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./res/css/main.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./res/js/main.js"></script>
+
+
+
+
+  <title>곽환욱♥강다슬</title>
+</head>
+
+<body>
+
+
+  <section class="area01">
+    <div class="conts-wrap">
+      <img src="./res/img/img01.png" alt="23/04/29 저희는 바로 이날 함께하기로 했습니다.">
+    </div>
+
+    <img src="./res/img/main-bg-01.jpg" alt="">
+  </section>
+
+  <section class="area02">
+    <div class="conts-wrap">
+      <img src="./res/img/img02.png" alt="오월의 신부 웨딩홀 3층 단독홀 오전 11시">
+    </div>
+  </section>
+
+  <section class="area03">
+    <div class="conts-wrap">
+      <div class="left">
+        <img src="./res/img/photo01.jpg" alt="">
+      </div>
+      <div class="right">
+        <img src="./res/img/photo01-txt.png" alt="신랑 곽한욱">
+        <div class="area-btn">
+          <a href="tel:01057685474" class="tel"></a>
+          <a href="sms:01057685474" class="sms"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="conts-wrap">
+      <div class="left">
+        <img src="./res/img/photo02-txt.png" alt="신부 강다슬">
+        <div class="area-btn">
+          <a href="tel:01065234642" class="tel"></a>
+          <a href="sms:01065234642" class="sms"></a>
+        </div>
+      </div>
+      <div class="right">
+        <img src="./res/img/photo02.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="area04">
+    <dv class="conts-wrap">
+      <img src="./res/img/img03.png" alt="">
+    </dv>
+    <div class="area-swiper">
+      <div class="swiper-01">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./res/img/swiper/a1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./res/img/swiper/a2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./res/img/swiper/a3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src=" ./res/img/swiper/a4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./res/img/swiper/a5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./res/img/swiper/a6.jpg" alt=""></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="area05">
+    <div class="conts-wrap">
+      <img src="./res/img/img04.png" alt="">
+
+      <div id="daumRoughmapContainer1680803723111" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+    </div>
+  </section>
+
+  <script charset="UTF-8" class="daum_roughmap_loader_script"
+    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <script charset="UTF-8">
+    new daum.roughmap.Lander({
+      "timestamp": "1680803723111",
+      "key": "2ecxi",
+
+    }).render();
+  </script>
+
+  <section class="area06">
+    <div class="conts-wrap">
+      <img src="./res/img/img05.png" alt="대구광역시 수성구 황금동 781 오월의 신부 웨딩홀 Tel. 053.710.7977">
+    </div>
+  </section>
+
+  <section class="area07">
+    <div class="conts-wrap">
+      <img src="./res/img/img06.png" alt="">
+      <img id="moneyGroom" src="./res/img/img07.png" alt="">
+      <img id="moneyBride" src="./res/img/img08.png" alt="">
+    </div>
+  </section>
+
+  <section class="area08">
+    <div class="conts-wrap">
+      <img src="./res/img/img09.png" alt="">
+    </div>
+  </section>
+
+  <script>
+    function copyToClipboard(val) {
+      var t = document.createElement("textarea");
+      document.body.appendChild(t);
+      t.value = val;
+      t.select();
+      document.execCommand('copy');
+      document.body.removeChild(t);
+    }
+
+    $('#moneyGroom').click(function () {
+      copyToClipboard('농협 356-0793-8096-13');
+      alert('신랑의 계좌번호를 복사하였습니다');
+    });
+
+    $('#moneyBride').click(function () {
+      copyToClipboard('농협 352-1493-8831-23');
+      alert('신부의 계좌번호를 복사하였습니다');
+    });
+  </script>
+
+
+</body>
+
+</html>
